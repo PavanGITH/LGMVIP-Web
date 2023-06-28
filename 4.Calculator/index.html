@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Calculator</title>
+  <meta name="description" content="Simple Calculator With Dark Mode." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="assets/calculator.ico">
+  <link rel="stylesheet" href="styles/dark.css" id="theme" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1 id="toast" style="color:yellow;margin-top:2px;">Calculator</h1>
+    <div class="container">
+      <div class="header-container">
+        <!-- This heading also notifies about the theme change.-->
+        <div class="top-buttons">
+          <button type="button" onclick="changeTheme()" class="theme-button">
+            <!-- <img src="assets/SunIcon.svg" alt="Theme Icon" height="19" width="19" id="theme-icon"> -->
+          </button>
+        </div>
+      </div>
+      <div class="first-row">
+        <div class="input-group input-group-lg">
+          <!-- <span class="input-group-text" id="inputGroup-sizing-lg">Large</span> -->
+          <input type="text" style="background-color:white;margin-bottom:50px;" name="result" id="result" placeholder="Result" readonly class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        
+        <!-- <input type="text" name="result" id="result" placeholder="Result" readonly /> -->
+        <input type="button" style="margin-bottom:50px;" class="btn btn-outline-info" value="C" onclick="result.value=''" id="clear-button" />
+      </div>
+    </div>
+    <div>
+      <div class="second-row">
+        <input type="button" class="btn btn-outline-info" value="1" onclick="liveScreen(1)" />
+        <input type="button" class="btn btn-outline-info" value="2" onclick="liveScreen(2)" />
+        <input type="button" class="btn btn-outline-info" value="3" onclick="liveScreen(3)" />
+        <input type="button" class="btn btn-outline-info" value="+" onclick="liveScreen('+')" />
+      </div>
+      <div class="third-row">
+        <input type="button" class="btn btn-outline-info" value="4" onclick=" liveScreen(4)" />
+        <input type="button" class="btn btn-outline-info" value="5" onclick=" liveScreen(5)" />
+        <input type="button" class="btn btn-outline-info" value="6" onclick=" liveScreen(6)" />
+        <input type="button" class="btn btn-outline-info" value="-" onclick="liveScreen('-')" />
+      </div>
+      <div class="fourth-row">
+        <input type="button" class="btn btn-outline-info" value="7" onclick="liveScreen(7)" />
+        <input type="button" class="btn btn-outline-info" value="8" onclick="liveScreen(8)" />
+        <input type="button" class="btn btn-outline-info" value="9" onclick=" liveScreen(9)" />
+        <input type="button" class="btn btn-outline-info" value="x" onclick="liveScreen('*')" />
+      </div>
+      <div class="fifth-row">
+        <input type="button" class="btn btn-outline-info" value="/" onclick="liveScreen('/')" />
+        <input type="button" class="btn btn-outline-info" value="0" onclick="liveScreen(0)" />
+        <input type="button" class="btn btn-outline-info" value="." onclick="liveScreen('.')" />
+        <input type="button" class="btn btn-outline-info" value="=" onclick="calculate(result.value)" />
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="scripts/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+
+</html>
