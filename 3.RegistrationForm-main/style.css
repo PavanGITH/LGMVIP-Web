@@ -1,0 +1,103 @@
+body {
+	font-family: 'Noto Sans Wancho', sans-serif;
+}
+.wrapper {
+    margin: 0px auto;
+    width: 100%;
+	display: flex;
+    justify-content: center;
+}
+.inner {
+    background: white;
+    box-shadow: rgb(60 66 87 / 12%) 0px 7px 14px 0px, rgb(0 0 0 / 12%) 0px 3px 6px 0px;
+    padding: 48px;
+	border-radius: 10px;
+	margin: 80px 20px 20px 20px;
+}
+.title h2 {
+    margin: 0 0 20px 0;
+}
+form.myTable input {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width: 100%;
+    min-height: 44px;
+    border: unset;
+    border-radius: 4px;
+    outline-color: rgb(0,0,0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+	margin-top: 5px;
+}
+button#save {
+    background-color: rgb(0,0,255);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width: 100%;
+    min-height: 44px;
+    border: unset;
+    border-radius: 4px;
+    outline-color: rgb(84 105 212 / 0.5);
+    margin-bottom: 10px;
+}
+
+button#clear {
+  background-color: rgb(0,0,255);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 8px 16px;
+  width: 100%;
+  min-height: 44px;
+  border: unset;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+}
+
+#myData {
+  font-family: 'Noto Sans Wancho', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#myData td, #myData th {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+#myData tr:nth-child(even){background-color: #f2f2f2;}
+
+#myData tr:hover {background-color: #ddd;}
+
+#myData th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(0,0,0);
+  color: white;
+}
+fa-trash:hover {
+    color: red;
+}
+.overlow {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+/* Overflow Scroll Design CSS Code */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
